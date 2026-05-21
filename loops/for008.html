@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript basic counting FOR loop</title>
+    <title>Skipping with continue</title>
 </head>
 <body>
-    <!-- JavaScript FOR loop -->
     <script>
-        for(let i=1;i<=5;i++){
-            console.log("Value of i: " + i );
+        for(let i=1;i<=7;i++){
+            if(i==3)continue;
+            console.log(i);
         }
     </script>
 </body>

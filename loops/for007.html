@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript basic counting FOR loop</title>
+    <title>Nested Loops</title>
 </head>
 <body>
-    <!-- JavaScript FOR loop -->
     <script>
+        // Multiplication Table
         for(let i=1;i<=5;i++){
-            console.log("Value of i: " + i );
+            for(let j=1;j<=5;j++){
+                console.log(`${i} * ${j} = ${i*j}`);
+            }
         }
     </script>
 </body>
