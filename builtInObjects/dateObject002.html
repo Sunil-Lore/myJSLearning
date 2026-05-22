@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display current time using Date Objects</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <script>
+        function cTime(){
+            let d=new Date();
+            let hours=d.getHours();
+            let minutes=d.getMinutes();
+            let seconds = d.getSeconds();
+            document.getElementById('demo1').innerHTML='Current Time: ' + hours +":" + minutes + ":"+ seconds;
+        }
+    setInterval(cTime,1000);
+
+    </script>
+    </script>
+    
+</body>
+</html>
