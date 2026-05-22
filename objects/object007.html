@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing all properties of an Object</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <script>
+        function Contact(name, number) {
+            this.name = name;
+            this.number = number;
+        }
+
+        let a = new Contact("David", 12345);
+
+        for (let key in a) {
+            document.getElementById("demo1").innerHTML += key + ": " + a[key] + "<br>";
+        }
+    </script>
+</body>
+</html>
