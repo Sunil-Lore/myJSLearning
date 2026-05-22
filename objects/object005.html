@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating object methods</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <script>
+        const person = {
+            name: 'Amit',
+            age: 45,
+            job: 'storekeeper',
+            address: {
+                city: 'Ahmedabad',
+                state: 'Gujrat'
+            },
+            hobbies: function(x,y) {
+                let z = x + y;
+                return z;
+            }
+        };
+
+        document.getElementById('demo1').innerHTML = person.hobbies(23,7);
+    </script>
+</body>
+</html>

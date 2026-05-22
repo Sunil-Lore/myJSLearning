@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>use of Object Constructor Function</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id='demo2'></p>
+    <script>
+        function person(name, age, title, color){
+            this.name=name;
+            this.age=age;
+            this.favcolor=color;
+            this.title=title;
+        }
+        let p1 = new person('Sunil',50,'Author','Purple');
+        let p2 = new person('Anil',54,'Thinker','Blue');
+        document.getElementById('demo1').innerText=(p1.name);
+        document.getElementById('demo2').innerText=(p2['favcolor']);
+    </script>
+</body>
+</html>
