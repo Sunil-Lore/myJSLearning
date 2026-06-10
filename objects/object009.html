@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing or modifying Object Properties</title>
+</head>
+<body>
+    <script>
+        // Ask the user to enter a choice
+        let choice = prompt("Enter 1 for accessing object properties or 2 for modifying object properties");
+
+        // Convert input to number
+        choice = parseInt(choice, 10);
+
+        if (choice === 1) {
+            let script = document.createElement("script");
+            script.src = "object009.js";
+            document.head.appendChild(script);
+        } else {
+            let script = document.createElement("script");
+            script.src = "object010.js";
+            document.head.appendChild(script);
+        }
+    </script>
+</body>
+</html>
+        
