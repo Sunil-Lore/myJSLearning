@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Function with Promise.all</title>
+</head>
+<body>
+    <script>
+        async function multipleTasks() {
+        const results = await Promise.all([
+        new Promise((resolve) => setTimeout(() => resolve("Task A done"), 5000)),
+        new Promise((resolve) => setTimeout(() => resolve("Task B done"), 10000)),
+        new Promise((resolve) => setTimeout(() => resolve("Task C done"), 15000)),
+            ]);
+            console.log(results);
+        }
+
+multipleTasks();
+
+    </script>
+</body>
+</html>

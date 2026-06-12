@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Async Function with await</title>
+</head>
+<body>
+    <script>
+        // Simple Async Function with await
+async function practiceAsync() {
+  console.log("Start...");
+
+  const result = await new Promise((resolve) => {
+    setTimeout(() => resolve("✅ Task complete!"), 12000);
+  });
+
+  console.log(result);
+}
+
+practiceAsync();
+
+    </script>
+</body>
+</html>
