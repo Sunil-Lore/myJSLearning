@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Function</title>
+</head>
+<body>
+    <script>
+        function* generatorFunction() {
+            yield 'Hello';
+            yield 'World';
+            return 'Done';
+        }
+
+        const generator = generatorFunction();
+
+        console.log(generator.next()); // { value: 'Hello', done: false }
+        console.log(generator.next()); // { value: 'World', done: false }
+        console.log(generator.next()); // { value: 'Done', done: true }
+    </script>
+</body>
+</html>

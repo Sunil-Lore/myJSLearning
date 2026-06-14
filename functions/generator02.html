@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Function</title>
+</head>
+<body>
+    <script>
+function* steps() {
+  console.log("Step 1: Data fetch शुरू");
+  yield;  // यहाँ pause होगा
+
+  console.log("Step 2: Data process करना");
+  yield;  // फिर pause
+
+  console.log("Step 3: Result दिखाना");
+}   
+const generator = steps();
+generator.next(); // Step 1: Data fetch शुरू  
+generator.next(); // Step 2: Data process करना
+generator.next(); // Step 3: Result दिखाना
+    </script>
+</body>
+</html>
